@@ -22,14 +22,17 @@ public class ClassWork {
         Rectangle rect2 = rect1;
         
         rect2.setLength(5);
-        rect1.setWidth(-100);
+        rect1.setWidth(100);
         
         System.out.println(rect1.getLength()); //should print 5.0.
         System.out.println(rect2.getLength()); //should print 5.0.
-        System.out.println(rect1.getWidth()); //should print 0.0.
+        System.out.println(rect1.getWidth()); //should print 100.0.
+        
+        System.out.println("The rectangle area is as follows:");
+        System.out.println(rect1.getArea()); //should print 0.0.
         
         int width = 0;
-        System.out.println(width); //printed 0.
+        System.out.println(width); //printed 500.
         
         Random rand = new Random();
         rand.nextInt();

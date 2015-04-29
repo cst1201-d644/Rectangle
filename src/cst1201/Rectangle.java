@@ -61,4 +61,12 @@ public class Rectangle {
             this.width = width;
         }
     }
+    
+    /**
+     * Returns the calculated area of this rectangle.
+     * @return The area of this rectangle.
+     */
+    public double getArea() {
+        return this.length * this.width;
+    }
 }
