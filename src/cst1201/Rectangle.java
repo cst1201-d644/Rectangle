@@ -30,6 +30,26 @@ public class Rectangle {
     public double getLength() {
         return length;
     }
+    
+    /**
+     * Creates a default rectangle with default values
+     * of length and width.
+     */
+    public Rectangle() {
+        this.length = 1;
+        this.width = 1;
+    }
+
+    /**
+     * Creates a default rectangle with the given values
+     * for length and width.
+     * @param length The length of the rectangle.
+     * @param width The width of the rectangle to create.
+     */
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
 
     /**
      * Sets the length of this rectangle.

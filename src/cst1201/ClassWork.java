@@ -37,7 +37,27 @@ public class ClassWork {
         Random rand = new Random();
         rand.nextInt();
         Random rand2 = rand;
+        
+        Rectangle rect3 = new Rectangle();
+        System.out.println("This rectangle has a length of: " +
+                rect3.getLength() + " and an width of " + rect3.getWidth());
+        
+        System.out.println("Calling the overloaded add methods:");
+        
+        String combined = add("Hello", " there");
+        System.out.println("The combined string is: " + combined);
+        
+        int sum = add(5, 2);
+        System.out.println("The sum is: " + sum);
     }
     
+    private static String add(String s1, String s2) {
+        System.out.println("In the string concatenation method");
+        return s1 + s2;
+    }
     
+    private static int add(int i1, int i2) {
+        System.out.println("In the integer addition method");
+        return i1 + i2;
+    }
 }
